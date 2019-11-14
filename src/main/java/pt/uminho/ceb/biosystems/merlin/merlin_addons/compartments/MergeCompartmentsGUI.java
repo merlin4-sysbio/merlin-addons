@@ -1,4 +1,4 @@
-package pt.uminho.ceb.biosystems.merlin.merlin_addons;
+package pt.uminho.ceb.biosystems.merlin.merlin_addons.compartments;
 
 import java.awt.Component;
 import java.awt.FlowLayout;
@@ -6,7 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -32,7 +31,6 @@ import es.uvigo.ei.aibench.workbench.ParamsReceiver;
 import es.uvigo.ei.aibench.workbench.Workbench;
 import pt.uminho.ceb.biosystems.merlin.aibench.datatypes.WorkspaceAIB;
 import pt.uminho.ceb.biosystems.merlin.aibench.gui.CustomGUI;
-import pt.uminho.ceb.biosystems.merlin.aibench.utilities.AIBenchUtils;
 import pt.uminho.ceb.biosystems.merlin.aibench.utilities.CreateImageIcon;
 import pt.uminho.ceb.biosystems.merlin.services.model.ModelCompartmentServices;
 
