@@ -48,6 +48,8 @@ public class MergeCompartments {
 					container2.getCompartmentID(), container1.getCompartmentID());
 
 			ModelCompartmentServices.deleteCompartmentById(workspaceName, container1.getCompartmentID());
+			
+			Workbench.getInstance().info("process complete! all entries of the compartment '" + container1.getName() + "' were replaced by '" + container2.getName() + "'");
 		}
 	}
 
