@@ -4,8 +4,8 @@ import es.uvigo.ei.aibench.core.operation.annotation.Direction;
 import es.uvigo.ei.aibench.core.operation.annotation.Operation;
 import es.uvigo.ei.aibench.core.operation.annotation.Port;
 import es.uvigo.ei.aibench.workbench.Workbench;
-import pt.uminho.ceb.biosystems.merlin.aibench.datatypes.WorkspaceAIB;
-import pt.uminho.ceb.biosystems.merlin.aibench.utilities.AIBenchUtils;
+import pt.uminho.ceb.biosystems.merlin.gui.datatypes.WorkspaceAIB;
+import pt.uminho.ceb.biosystems.merlin.gui.utilities.AIBenchUtils;
 import pt.uminho.ceb.biosystems.merlin.core.containers.model.CompartmentContainer;
 import pt.uminho.ceb.biosystems.merlin.services.model.ModelCompartmentServices;
 
