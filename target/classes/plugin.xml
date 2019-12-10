@@ -1,22 +1,36 @@
 <plugin start="true">
     <uid>merlin-addons</uid>
     <name>pt.uminho.ceb.biosystems.merlin.addons</name>
-    <version>2.5.1</version>
+    <version>4.0.0</version>
     
     <dependencies>
         <dependency uid="merlin"/>
     </dependencies>
     
     <extensions>
+    
+     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% - compartments - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    
         <extension uid="aibench.core" name="aibench.core.operation-definition"
-            class="pt.uminho.ceb.biosystems.merlin.merlin_transyt.TranSyTRetriever">
-            <operation-description name="TranSyT"
-                path="40@model/" uid="operations.TranSyT.ID" />
+            class="pt.uminho.ceb.biosystems.merlin.merlin_addons.compartments.MergeCompartments">
+            <operation-description name="merge compartments"
+                path="30@model/30@tools" uid="operations.MergeCompartments.ID" />
         </extension>
 
        <extension uid="aibench.workbench" name="aibench.workbench.view">
-            <icon-operation operation="operations.TranSyT.ID"
+            <icon-operation operation="operations.MergeCompartments.ID"
                icon="icons/Lifecycle/remote.png" />
         </extension>
+        
+        <extension uid="aibench.workbench"
+			name="aibench.workbench.view">
+
+			<gui-operation operation="operations.MergeCompartments.ID"
+				class="pt.uminho.ceb.biosystems.merlin.merlin_addons.compartments.MergeCompartmentsGUI" />
+		</extension>
+		
+	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% - clone workspace - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	
+	
     </extensions>
 </plugin>
