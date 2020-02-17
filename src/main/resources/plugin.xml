@@ -37,20 +37,5 @@
 		<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% - clone workspace - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 
-		<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% - id converter - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-		<extension uid="aibench.core"
-			name="aibench.core.operation-definition"
-			class="pt.uminho.ceb.biosystems.merlin.merlin_addons.ids_converter.CompoundAndReactionsConverter">
-			<operation-description name="converter"
-				path="40@validation/" uid="operations.CompoundAndReactionsConverter.ID" />
-		</extension>
-
-		<extension uid="aibench.workbench"
-			name="aibench.workbench.view">
-			<icon-operation
-				operation="operations.CompoundConverter.ID"
-				icon="icons/Lifecycle/remote.png" />
-		</extension>
-
 	</extensions>
 </plugin>
