@@ -47,3 +47,5 @@ java_pid*.*
 
 #temp
 gff_error_report.txt
+/.apt_generated/
+/.apt_generated_tests/
